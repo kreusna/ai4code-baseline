@@ -38,7 +38,7 @@ val_df = pd.read_csv(args.val_path)
 
 order_df = pd.read_csv("../input/AI4Code/train_orders.csv").set_index("id")
 df_orders = pd.read_csv(
-    data_dir / 'train_orders.csv',
+    data_dir / 'AI4Code/train_orders.csv',
     index_col='id',
     squeeze=True,
 ).str.split()
